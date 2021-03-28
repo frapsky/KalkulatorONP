@@ -49,6 +49,9 @@ public class Main {
                     case "|": //sqrt a^b
                         answer = Math.pow(a,1/b);
                         break;
+                    case "%":
+                        answer = a%b;
+                        break;
 
                 }
                 values.add(answer);// dodaj na stos wynik
@@ -66,6 +69,6 @@ public class Main {
 
     private static boolean isOperator(String s)
     {
-        return s.equals("+") || s.equals("-") || s.equals("*") || s.equals("/") || s.equals("^") || s.equals("|");
+        return s.equals("+") || s.equals("-") || s.equals("*") || s.equals("/") || s.equals("^") || s.equals("|") || s.equals("%");
     }
 }
